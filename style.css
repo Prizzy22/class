@@ -67,13 +67,14 @@ main{
   .dropdown {
     position: relative;
     display: inline-block;
+    color: white;
   }
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(254, 254, 254, 0.2);
     z-index: 1;
   }
   .dropdown-content a {
@@ -90,9 +91,9 @@ main{
     height: 100vh;
     padding-top: 10%;
 }
-.main,.main2{
+/* .main,.main2{
     border: 2px solid red;
-}
+} */
 .main{
     display: flex;
     height: 90%;
@@ -107,7 +108,7 @@ main{
     color: white;
 }
 .text{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     flex: 25%;
     display: flex;
     justify-content: center;
@@ -121,7 +122,7 @@ main{
     margin-left: 0%;
 }
 .image{
-  border: 2px solid green;
+  /* border: 2px solid green; */
   flex: 50%;
   display: flex;
   justify-content: center;
@@ -224,6 +225,9 @@ main{
     color: white;
     gap: 20px;
 }
+.each-sect1{
+    display: flex;
+}
 /* .each_sect{
     display: flex;
     text-align: center; 
@@ -236,13 +240,33 @@ main{
 .sect6{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
-    width: 60%;
+    width: 90%;
+    row-gap: 20px;
     justify-items: center;
     margin: 0 auto;
     column-gap: 30px;
 }
+.sect6 p{
+    font-size: 20px;
+}
 .text6{
+    display: flex;
+    padding-left: 100px;
+    gap: 100px;
+}
+.text67{
+    width: 500px;
     padding-left: 20px;
+}
+.text6 h3{
+    font-size: 27px;
+}
+.navpills{
+    width: 600px;
+    height: 330px;
+}
+.nav nav-pill{
+    background-color: transparent;
 }
 .fl{
     display: flex;
@@ -425,12 +449,17 @@ text-decoration: none;
     gap: 10px;
 }
 .high{
-    width: 400px;
+    width: 600px;
     font-weight: 500;
     font-size: 19px;
     color: grey;
     line-height: 1.4em;
     text-transform: none;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+.tctext{
+    font-size: 20px;
 }
 .numbers{
     font-size: 160px;
@@ -439,7 +468,6 @@ text-decoration: none;
     position: absolute;
     top: 0%;
     left: 0%;
-    
 }
 .type{
     position: relative;
@@ -498,10 +526,22 @@ text-decoration: none;
     text-align: center;
     margin-top: 30px;
 }
+.sect12{
+    display: flex;
+    gap: 30px;
+}
 .company{
     margin-left: 10%;
     margin-top: 5%;
     width: 550px;
+}
+.imgs12{
+    background-image: url(/img/7.jpg);
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -575,7 +615,6 @@ nav{
     left: 45%;
 }
 .image{
-    border: 2px solid green;
     flex: 50%;
     display: flex;
     justify-content: center;
@@ -591,7 +630,6 @@ nav{
     flex-direction: column;
 }
 .text{
-    border: 2px solid green;
     flex: 25%;
     display: flex;
     flex-direction: column;
@@ -604,6 +642,12 @@ nav{
     left: 0;
     color: white;
     gap: 20px;
+    flex-direction: column;
+}
+.text6{
+    display: flex;
+    padding-left: 100px;
+    gap: 100px;
     flex-direction: column;
 }
 
